@@ -42,8 +42,8 @@ Add_my_fruit=  streamlit.text_input('What fruit would you like to add','jackfrui
 streamlit.write('Thanks for adding jackfruit ', fruit_choice)
 my_cur.execute("insert into fruit_load_list values ('from streamlit')")
 
-except URLError as e:
-    streamlit.error()
+  except URLError as e:
+     streamlit.error()
 
 
 def get_fruityvice_data(this_fruit_choice):
